@@ -26,6 +26,11 @@ pipeline {
           sh 'semgrep ci'
       }
     }
+      stage('Testing') {
+            steps {
+                sh ''''
+            }
+        }
       stage('Build') {
         steps {
             echo 'Hello World'
